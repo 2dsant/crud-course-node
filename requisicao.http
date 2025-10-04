@@ -1,0 +1,14 @@
+GET http://localhost:3333/courses
+
+###
+
+GET http://localhost:3333/courses/6c26607f-86de-4094-9162-3ebdb732b1d9
+
+###
+
+POST http://localhost:3333/courses
+Content-Type: application/json
+
+{
+    "title": "Curs"
+}
