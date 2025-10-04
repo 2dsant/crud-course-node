@@ -1,4 +1,4 @@
-GET http://localhost:3333/courses
+GET http://localhost:3333/courses?search=
 
 ###
 
