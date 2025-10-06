@@ -2,13 +2,24 @@ GET http://localhost:3333/courses?search=
 
 ###
 
-GET http://localhost:3333/courses/6c26607f-86de-4094-9162-3ebdb732b1d9
-
+GET http://localhost:3333/courses/ee0a5d1e-615d-42ef-bb34-5465b17d8b78
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0N2ZiNTk4ZS0xZDhiLTRiMGUtOTkzYi04NGI5M2YzNTNhMjkiLCJyb2xlIjoic3R1ZGVudCIsImlhdCI6MTc1OTcwNTIxNn0.7oVVJ_Ptzt7P_9DXTxiZI8qsfG8Vz8NZs1HlmXLvVGI
 ###
 
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0N2ZiNTk4ZS0xZDhiLTRiMGUtOTkzYi04NGI5M2YzNTNhMjkiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1OTcxMTU1OH0.czTusG49hmZ1uAO6pbeEZuE-j6IT3BTyOdOMB863L4I
 
 {
-    "title": "Curs"
+    "title": "Curso de Java"
+}
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+    "email": "Vicente_Xavier60@gmail.com",
+    "password": "123456"
 }

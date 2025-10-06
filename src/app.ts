@@ -3,6 +3,7 @@ import { getCourseByIdRoute } from "../src/routes/get-course-by-id.ts";
 import { createCourseRoute } from "../src/routes/create-course.ts";
 import scalarApiReference from '@scalar/fastify-api-reference';
 import { getCoursesRoute } from "../src/routes/get-courses.ts";
+import { loginRoute } from "./routes/login.ts";
 import fastifySwagger from "@fastify/swagger";
 import fastify from "fastify";
 
@@ -40,5 +41,6 @@ server.setValidatorCompiler(validatorCompiler);
 server.register(createCourseRoute);
 server.register(getCoursesRoute);
 server.register(getCourseByIdRoute);
+server.register(loginRoute);
 
 export { server }
